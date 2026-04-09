@@ -1,0 +1,3 @@
+D:/Projects/warehouse/cmake-build-debug/CMakeFiles/warehouse.dir
+D:/Projects/warehouse/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Projects/warehouse/cmake-build-debug/CMakeFiles/rebuild_cache.dir

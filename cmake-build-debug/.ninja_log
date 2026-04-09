@@ -1,0 +1,10 @@
+# ninja log v5
+12	1146	7973601399214968	CMakeFiles/warehouse.dir/core/Warehouse.cpp.obj	c415201299c92ec0
+6	688	7973609990019958	CMakeFiles/warehouse.dir/main.cpp.obj	fc32f3aceeeb4f53
+1	263	7974502501431699	build.ninja	b2ae37f584a30987
+3	796	7973601395797458	CMakeFiles/warehouse.dir/models/Item.cpp.obj	eaa48ae05402afe4
+9	589	7973621054265499	CMakeFiles/warehouse.dir/ui/Interface.cpp.obj	945c336c3f9b2be8
+10	433	7973608327206103	CMakeFiles/warehouse.dir/file/ExcelExporter.cpp.obj	d711fbf4fa72303e
+788	1489	7973601402922338	CMakeFiles/warehouse.dir/utils/InputHelper.cpp.obj	3c150459e372b0c5
+5	1002	7973623395471384	CMakeFiles/warehouse.dir/file/FileManager.cpp.obj	940ed0284d08c5e9
+1002	1219	7973623397694743	warehouse.exe	93fd8fd440f67f0f
