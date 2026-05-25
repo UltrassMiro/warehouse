@@ -1,5 +1,4 @@
 #include "ExcelExporter.h"
-#include <stdexcept>
 #include <map>
 #include <vector>
 #include <string>

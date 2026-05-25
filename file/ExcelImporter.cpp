@@ -1,5 +1,4 @@
 #include "ExcelImporter.h"
-#include <stdexcept>
 #include <string>
 #include <vector>
 #ifdef OPENXLSX_FOUND
@@ -20,7 +19,6 @@ static string normalizeCategoryName(const string& sheetName) {
 
 
 // Імпортує всі листи Excel, оновлює існуючі товари, додає нові
-
 void ExcelImporter::importFromExcel(
 
 Warehouse& warehouse,const string& filePath) {

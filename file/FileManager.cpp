@@ -6,7 +6,6 @@
 using namespace std;
 
 // Перевіряє, чи можна безпечно перетворити текст у число
-
 static bool safeStoi(const string& text, int& value) {
     try {
         if (text.empty()) {

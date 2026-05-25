@@ -1,17 +1,12 @@
 #include "MainWindow.h"
-
 #include <QWidget>
-#include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QFormLayout>
-#include <QDialog>
-#include <QDialogButtonBox>
 #include <QMessageBox>
 #include <QFileDialog>
 #include <QSpinBox>
 #include <QHeaderView>
 #include <QSet>
-
 #include "../models/Item.h"
 #include "../file/ExcelExporter.h"
 #include "../file/ExcelImporter.h"
@@ -102,6 +97,7 @@ void MainWindow::setupUi() {
             this,
             &MainWindow::categoryChanged);
 }
+
 // Стилі для інтерфейсу
 void MainWindow::setupStyle() {
     setStyleSheet(
@@ -128,94 +124,35 @@ int MainWindow::getSelectedItemId() const {
     if (row < 0)
         return -1;
 
-    return table->item(row, 0)
-            ->text()
-            .toInt();
+    return table->item(row, 0)->text().toInt();
 }
 // Оновлення таблиці
 void MainWindow::refreshTable() {
 
-    QString search =
-            searchLine->text()
-            .toLower();
-
-    QString category =
-            categoryBox
-            ->currentText();
+    QString search = searchLine->text().toLower();
+    QString category = categoryBox->currentText();
 
     table->setRowCount(0);
 
-    for (const auto& item :
-         warehouse.getItems()) {
+    for (const auto& item : warehouse.getItems()) {
 
-        QString name =
-                QString::fromStdString(
-                        item.getName()
-                );
+        QString name = QString::fromStdString(item.getName());
+        QString itemCategory = QString::fromStdString(item.getCategory());
 
-        QString itemCategory =
-                QString::fromStdString(
-                        item.getCategory()
-                );
+        bool matchesSearch = name.toLower().contains(search);
+        bool matchesCategory = category == "All categories" || itemCategory == category;
 
-        bool matchesSearch =
-                name.toLower()
-                .contains(search);
-
-        bool matchesCategory =
-                category ==
-                "All categories"
-                ||
-                itemCategory ==
-                category;
-
-        if (
-                !matchesSearch
-                ||
-                !matchesCategory
-                )
+        if (!matchesSearch || !matchesCategory)
             continue;
 
-        int row =
-                table->rowCount();
+        int row = table->rowCount();
 
         table->insertRow(row);
 
-        table->setItem(
-                row,
-                0,
-                new QTableWidgetItem(
-                        QString::number(
-                                item.getId()
-                        )
-                )
-        );
-
-        table->setItem(
-                row,
-                1,
-                new QTableWidgetItem(
-                        name
-                )
-        );
-
-        table->setItem(
-                row,
-                2,
-                new QTableWidgetItem(
-                        QString::number(
-                                item.getQuantity()
-                        )
-                )
-        );
-
-        table->setItem(
-                row,
-                3,
-                new QTableWidgetItem(
-                        itemCategory
-                )
-        );
+        table->setItem(row, 0, new QTableWidgetItem(QString::number( item.getId())));
+        table->setItem(row, 1, new QTableWidgetItem(name));
+        table->setItem(row, 2, new QTableWidgetItem(QString::number(item.getQuantity())));
+        table->setItem(row, 3, new QTableWidgetItem(itemCategory));
     }
 
     refreshTotal();
@@ -230,55 +167,33 @@ void MainWindow::categoryChanged() {
 }
 
 void MainWindow::refreshTotal() {
-    totalLabel->setText(
-        "Total amount of products: "
-        + QString::number(
-            warehouse.getTotalItems()
-        )
-    );
+    totalLabel->setText("Total amount of products: "
+        + QString::number( warehouse.getTotalItems()));
 }
 
 void MainWindow::refreshCategories() {
-    QString current =
-        categoryBox->currentText();
+    QString current = categoryBox->currentText();
 
     categoryBox->blockSignals(true);
-
     categoryBox->clear();
-
-    categoryBox->addItem(
-        "All categories"
-    );
+    categoryBox->addItem("All categories");
 
     QSet<QString> categories;
 
     for (const auto& item :
          warehouse.getItems()) {
 
-        categories.insert(
-            QString::fromStdString(
-                item.getCategory()
-            )
-        );
+        categories.insert(QString::fromStdString( item.getCategory()));
     }
 
-    for (const QString& category :
-         categories) {
-
-        categoryBox->addItem(
-            category
-        );
+    for (const QString& category : categories) {
+        categoryBox->addItem( category);
     }
 
-    int index =
-        categoryBox->findText(
-            current
-        );
+    int index = categoryBox->findText(current);
 
     if (index >= 0)
-        categoryBox->setCurrentIndex(
-            index
-        );
+        categoryBox->setCurrentIndex(index);
 
     categoryBox->blockSignals(false);
 }
@@ -308,47 +223,24 @@ void MainWindow::addItem() {
     form.addRow("Quantity:", &quantitySpin);
     form.addRow("Category:", &categoryCombo);
 
-    QDialogButtonBox buttons(
-        QDialogButtonBox::Ok |
-        QDialogButtonBox::Cancel
-    );
+    QDialogButtonBox buttons(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
 
     form.addRow(&buttons);
 
-    connect(
-        &buttons,
-        &QDialogButtonBox::accepted,
-        &dialog,
-        &QDialog::accept
-    );
-
-    connect(
-        &buttons,
-        &QDialogButtonBox::rejected,
-        &dialog,
-        &QDialog::reject
-    );
+    connect(&buttons, &QDialogButtonBox::accepted, &dialog, &QDialog::accept);
+    connect(&buttons, &QDialogButtonBox::rejected, &dialog, &QDialog::reject);
 
     if (dialog.exec() == QDialog::Accepted) {
         QString name = nameEdit.text().trimmed();
         QString category = categoryCombo.currentText();
 
         if (name.isEmpty()) {
-            QMessageBox::warning(
-                this,
-                "Error",
-                "Name cannot be empty."
-            );
+            QMessageBox::warning(this, "Error", "Name cannot be empty.");
             return;
         }
 
         warehouse.addItem(
-            Item(
-                name.toStdString(),
-                quantitySpin.value(),
-                category.toStdString()
-            )
-        );
+            Item(name.toStdString(), quantitySpin.value(), category.toStdString()));
 
         saveData();
         refreshCategories();
@@ -360,22 +252,14 @@ void MainWindow::editItem() {
     int id = getSelectedItemId();
 
     if (id == -1) {
-        QMessageBox::warning(
-            this,
-            "Error",
-            "Select product for editing."
-        );
+        QMessageBox::warning(this, "Error", "Select product for editing.");
         return;
     }
 
     Item* item = warehouse.findItemById(id);
 
     if (item == nullptr) {
-        QMessageBox::warning(
-            this,
-            "Error",
-            "Product not found."
-        );
+        QMessageBox::warning(this, "Error", "Product not found.");
         return;
     }
 
@@ -384,9 +268,7 @@ void MainWindow::editItem() {
 
     QFormLayout form(&dialog);
 
-    QLineEdit nameEdit(
-        QString::fromStdString(item->getName())
-    );
+    QLineEdit nameEdit(QString::fromStdString(item->getName()));
 
     QSpinBox quantitySpin;
     QComboBox categoryCombo;
@@ -399,9 +281,7 @@ void MainWindow::editItem() {
         "Other"
     });
 
-    int categoryIndex = categoryCombo.findText(
-        QString::fromStdString(item->getCategory())
-    );
+    int categoryIndex = categoryCombo.findText(QString::fromStdString(item->getCategory()));
 
     if (categoryIndex >= 0) {
         categoryCombo.setCurrentIndex(categoryIndex);
@@ -415,46 +295,24 @@ void MainWindow::editItem() {
     form.addRow("Quantity:", &quantitySpin);
     form.addRow("Category:", &categoryCombo);
 
-    QDialogButtonBox buttons(
-        QDialogButtonBox::Ok |
-        QDialogButtonBox::Cancel
-    );
+    QDialogButtonBox buttons(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
 
     form.addRow(&buttons);
 
-    connect(
-        &buttons,
-        &QDialogButtonBox::accepted,
-        &dialog,
-        &QDialog::accept
-    );
-
-    connect(
-        &buttons,
-        &QDialogButtonBox::rejected,
-        &dialog,
-        &QDialog::reject
-    );
+    connect(&buttons, &QDialogButtonBox::accepted, &dialog, &QDialog::accept);
+    connect(&buttons, &QDialogButtonBox::rejected, &dialog, &QDialog::reject);
 
     if (dialog.exec() == QDialog::Accepted) {
         QString name = nameEdit.text().trimmed();
         QString category = categoryCombo.currentText();
 
         if (name.isEmpty()) {
-            QMessageBox::warning(
-                this,
-                "Error",
-                "Name cannot be empty."
-            );
+            QMessageBox::warning(this, "Error", "Name cannot be empty.");
             return;
         }
 
         warehouse.updateItem(
-            id,
-            name.toStdString(),
-            quantitySpin.value(),
-            category.toStdString()
-        );
+            id, name.toStdString(), quantitySpin.value(), category.toStdString());
 
         saveData();
         refreshCategories();
@@ -464,121 +322,64 @@ void MainWindow::editItem() {
 // Видалення
 void MainWindow::deleteItem() {
 
-    int id =
-        getSelectedItemId();
+    int id = getSelectedItemId();
 
     if (id == -1) {
 
-        QMessageBox::warning(
-            this,
-            "Error",
-            "Select product for deletion."
-        );
+        QMessageBox::warning(this, "Error", "Select product for deletion.");
 
         return;
     }
 
-    auto reply =
-        QMessageBox::question(
-            this,
-            "Confirmation",
-            "Delete selected product?"
-        );
+    auto reply = QMessageBox::question(
+        this, "Confirmation", "Delete selected product?");
 
-    if (
-        reply
-        ==
-        QMessageBox::Yes
-    ) {
+    if (reply == QMessageBox::Yes) {
 
-        warehouse.removeItem(
-            id
-        );
+        warehouse.removeItem(id);
 
         saveData();
-
         refreshCategories();
-
         refreshTable();
     }
 }
 // Експорт в Excel
 void MainWindow::exportExcel() {
 
-    QString path =
-        QFileDialog::
-        getSaveFileName(
-            this,
-            "Export Excel",
-            "warehouse.xlsx",
-            "Excel (*.xlsx)"
-        );
+    QString path = QFileDialog::getSaveFileName(
+        this, "Export Excel", "warehouse.xlsx", "Excel (*.xlsx)");
 
-    if (
-        path.isEmpty()
-    )
+    if (path.isEmpty())
         return;
 
     try {
 
-        ExcelExporter::
-        exportToExcel(
-            warehouse,
-            path.toStdString()
-        );
-
-        QMessageBox::
-        information(
-            this,
-            "Success",
-            "Export completed."
-        );
-
-    } catch (
-        exception& e
-    ) {
-
-        QMessageBox::
-        critical(
-            this,
-            "Export error",
-            e.what()
-        );
+        ExcelExporter::exportToExcel(warehouse, path.toStdString());
+        QMessageBox::information(this, "Success", "Export completed.");
+    }
+    catch (exception& e) {
+        QMessageBox::critical(this, "Export error", e.what());
     }
 }
 // Імпорт з Excel
 void MainWindow::importExcel() {
     QString filePath = QFileDialog::getOpenFileName(
-        this,
-        "Import Excel",
-        "",
-        "Excel files (*.xlsx)"
-    );
+        this, "Import Excel", "", "Excel files (*.xlsx)");
 
     if (filePath.isEmpty()) {
         return;
     }
 
     try {
-        ExcelImporter::importFromExcel(
-            warehouse,
-            filePath.toStdString()
-        );
+        ExcelImporter::importFromExcel(warehouse, filePath.toStdString());
 
         saveData();
         refreshCategories();
         refreshTable();
 
-        QMessageBox::information(
-            this,
-            "Success",
-            "Excel import completed."
-        );
-    } catch (const exception& e) {
-        QMessageBox::critical(
-            this,
-            "Import error",
-            e.what()
-        );
+        QMessageBox::information(this, "Success", "Excel import completed.");
+    }
+    catch (const exception& e) {
+        QMessageBox::critical(this, "Import error", e.what());
     }
 }
