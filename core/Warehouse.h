@@ -2,6 +2,7 @@
 #define WAREHOUSE_H
 
 #include <vector>
+#include <string>
 #include "../models/Item.h"
 
 using namespace std;
@@ -13,8 +14,10 @@ private:
 public:
     void addItem(const Item& item);
     void removeItem(int id);
+
     Item* findItemByName(const string& name);
     Item* findItemById(int id);
+
     void updateItem(int id, const string& name, int quantity, const string& category);
 
     void displayAll();
@@ -24,6 +27,9 @@ public:
     int getCategoryCount(const string& category);
 
     vector<Item>& getItems();
+    const vector<Item>& getItems() const;
+
+    void clear();
 };
 
 #endif

@@ -1,10 +1,20 @@
-# ninja log v5
-12	1146	7973601399214968	CMakeFiles/warehouse.dir/core/Warehouse.cpp.obj	c415201299c92ec0
-6	688	7973609990019958	CMakeFiles/warehouse.dir/main.cpp.obj	fc32f3aceeeb4f53
-1	263	7974502501431699	build.ninja	b2ae37f584a30987
-3	796	7973601395797458	CMakeFiles/warehouse.dir/models/Item.cpp.obj	eaa48ae05402afe4
-9	589	7973621054265499	CMakeFiles/warehouse.dir/ui/Interface.cpp.obj	945c336c3f9b2be8
-10	433	7973608327206103	CMakeFiles/warehouse.dir/file/ExcelExporter.cpp.obj	d711fbf4fa72303e
-788	1489	7973601402922338	CMakeFiles/warehouse.dir/utils/InputHelper.cpp.obj	3c150459e372b0c5
-5	1002	7973623395471384	CMakeFiles/warehouse.dir/file/FileManager.cpp.obj	940ed0284d08c5e9
-1002	1219	7973623397694743	warehouse.exe	93fd8fd440f67f0f
+# ninja log v6
+28	2477	8014069793355469	warehouse_autogen/timestamp	6fe21666c4731bde
+28	2477	8014069793355469	warehouse_autogen/mocs_compilation.cpp	6fe21666c4731bde
+28	2477	8014069793355469	C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_autogen/timestamp	6fe21666c4731bde
+4540	6725	8014069814365549	CMakeFiles/warehouse.dir/utils/InputHelper.cpp.obj	bb52afcb65e0de46
+28	2477	8014069793355469	C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_autogen/mocs_compilation.cpp	6fe21666c4731bde
+2504	3770	8014069793996375	CMakeFiles/warehouse.dir/models/Item.cpp.obj	c67702eacb33b4c8
+2517	4539	8014069794515384	CMakeFiles/warehouse.dir/core/Warehouse.cpp.obj	336f70020cf7ee2f
+2660	5549	8014069795680551	CMakeFiles/warehouse.dir/file/FileManager.cpp.obj	4ac7d023aed8478c
+2611	12158	8014069795205325	CMakeFiles/warehouse.dir/ui/MainWindow.cpp.obj	a10e0875190a59e7
+3770	11045	8014069806652387	CMakeFiles/warehouse.dir/file/ExcelExporter.cpp.obj	b5e0d411a11f6856
+5550	11334	8014069824513473	CMakeFiles/warehouse.dir/file/ExcelImporter.cpp.obj	ead8fa985397912a
+2480	11202	8014069793760125	CMakeFiles/warehouse.dir/warehouse_autogen/mocs_compilation.cpp.obj	dc9fb3acf4f655fd
+2486	11370	8014069793830294	CMakeFiles/warehouse.dir/main.cpp.obj	2d9478832609e090
+41	685	8014072839327718	warehouse_autogen/timestamp	6fe21666c4731bde
+41	685	8014072839327718	warehouse_autogen/mocs_compilation.cpp	6fe21666c4731bde
+41	685	8014072839327718	C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_autogen/timestamp	6fe21666c4731bde
+41	685	8014072839327718	C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_autogen/mocs_compilation.cpp	6fe21666c4731bde
+687	5568	8014072845794060	CMakeFiles/warehouse.dir/ui/MainWindow.cpp.obj	a10e0875190a59e7
+5568	7107	8014072894596160	warehouse.exe	a4913b4b66512253

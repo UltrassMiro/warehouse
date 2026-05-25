@@ -1,7 +1,11 @@
-#include "ui/Interface.h"
+#include <QApplication>
+#include "ui/MainWindow.h"
 
-int main() {
-    Interface app;
-    app.run();
-    return 0;
+int main(int argc, char *argv[]) {
+    QApplication app(argc, argv);
+
+    MainWindow window;
+    window.show();
+
+    return app.exec();
 }
