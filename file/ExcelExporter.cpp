@@ -1,376 +1,125 @@
 #include "ExcelExporter.h"
-
 #include <stdexcept>
 #include <map>
 #include <vector>
 #include <string>
-
 #ifdef OPENXLSX_FOUND
-
 #include <OpenXLSX.hpp>
-
 using namespace OpenXLSX;
-
+using namespace std;
 #endif
 
-using namespace std;
-
-/*
- Замінює заборонені символи,
- щоб Excel не падав при
- створенні листів
-*/
-static string safeSheetName(
-        string name
-) {
-
-    for (
-            char& ch :
-            name
-            ) {
+// Замінює заборонені символи, щоб Excel не падав при створенні листів
+static string safeSheetName(string name) {
+    for (char& ch : name) {
 
         if (
-
                 ch == '/'
-
                 ||
-
                 ch == '\\'
-
                 ||
-
                 ch == '?'
-
                 ||
-
                 ch == '*'
-
                 ||
-
                 ch == '['
-
                 ||
-
                 ch == ']'
-
                 ||
-
                 ch == ':'
-
                 ) {
-
             ch = '_';
         }
     }
 
-    if (
-            name.empty()
-            ) {
-
-        name =
-                "Other";
+    if (name.empty())
+    {
+        name = "Other";
     }
 
-    if (
-            name.size()
-            >
-            31
-            ) {
-
-        name =
-                name.substr(
-                        0,
-                        31
-                );
+    if (name.size() > 31)
+    {
+        name = name.substr(0, 31);
     }
-
     return name;
 }
 
-/*
- Створює заголовки таблиці
-*/
-static void writeHeader(
-
-        XLWorksheet& sheet
-
-) {
-
-    sheet.cell(
-            1,
-            1
-    ).value()
-
-            =
-
-            "ID";
-
-    sheet.cell(
-            1,
-            2
-    ).value()
-
-            =
-
-            "Name";
-
-    sheet.cell(
-            1,
-            3
-    ).value()
-
-            =
-
-            "Quantity";
-
-    sheet.cell(
-            1,
-            4
-    ).value()
-
-            =
-
-            "Category";
+// Створює заголовки таблиці
+static void writeHeader(XLWorksheet& sheet)
+{
+    sheet.cell(1, 1).value() = "ID";
+    sheet.cell(1, 2).value() = "Name";
+    sheet.cell(1, 3).value() = "Quantity";
+    sheet.cell(1, 4).value() = "Category";
 }
 
-/*
- Записує один товар
- у рядок Excel
-*/
+// Записує один товар у рядок Excel
 static void writeItem(
-
-        XLWorksheet& sheet,
-
-        int row,
-
-        const Item& item
-
-) {
-
-    sheet.cell(
-            row,
-            1
-    ).value()
-
-            =
-
-            item.getId();
-
-    sheet.cell(
-            row,
-            2
-    ).value()
-
-            =
-
-            item.getName();
-
-    sheet.cell(
-            row,
-            3
-    ).value()
-
-            =
-
-            item.getQuantity();
-
-    sheet.cell(
-            row,
-            4
-    ).value()
-
-            =
-
-            item.getCategory();
+    XLWorksheet& sheet, int row, const Item& item )
+{
+    sheet.cell(row,1).value() = item.getId();
+    sheet.cell(row,2).value() = item.getName();
+    sheet.cell(row,3).value() = item.getQuantity();
+    sheet.cell(row,4).value() = item.getCategory();
 }
 
-/*
- Експортує дані
- в Excel файл
+// Експортує дані в Excel файл
+// Для кожної категорії створюється окремий лист
+void ExcelExporter::exportToExcel(Warehouse& warehouse, const string& filePath)
+{
 
- Для кожної категорії
- створюється окремий лист
-*/
-void ExcelExporter::exportToExcel(
-
-        Warehouse& warehouse,
-
-        const string& filePath
-
-) {
-
-#ifndef OPENXLSX_FOUND
-
-    throw runtime_error(
-
-            "OpenXLSX not connected."
-
-    );
-
+#ifndef OPENXLSX_FOUND throw runtime_error("OpenXLSX not connected.");
 #else
 
     XLDocument doc;
-
-    doc.create(
-            filePath
-    );
+    doc.create(filePath);
 
     vector<string>
             categories = {
-
             "Tools",
-
             "Screws and nuts",
-
             "Paints",
-
             "Uniform",
-
             "Other"
     };
 
-    map<
-            string,
-            vector<Item>
-    >
+    map<string, vector<Item>> groupedItems;
 
-            groupedItems;
-
-    /*
-     Створюємо всі категорії
-    */
-
-    for (
-
-            const string&
-            category :
-
-            categories
-
-            ) {
-
-        groupedItems[
-                category
-        ]
-
-                = {};
+// Створює всі категорії
+    for (const string& category : categories) {
+            groupedItems[category] = {};
     }
 
-    /*
-     Розподіляємо товари
-     по категоріях
-    */
+// Розподіляє товари по категоріях
+    for (const Item& item : warehouse.getItems()) {
+            string category = item.getCategory();
 
-    for (
-
-            const Item&
-            item :
-
-            warehouse
-                    .getItems()
-
-            ) {
-
-        string category =
-
-                item
-                        .getCategory();
-
-        if (
-
-                groupedItems.find(
-                        category
-                )
-
-                !=
-
-                groupedItems.end()
-
-                ) {
-
-            groupedItems[
-                    category
-            ]
-
-                    .push_back(
-                            item
-                    );
-
+        if (groupedItems.find(category) != groupedItems.end()) {
+                groupedItems[category].push_back(item);
         }
 
         else {
-
-            groupedItems[
-                    "Other"
-            ]
-
-                    .push_back(
-                            item
-                    );
+            groupedItems["Other"].push_back(item);
         }
     }
 
-    bool firstSheet =
-            true;
+    bool firstSheet = true;
 
-    for (
-
-            const auto&
-            pair :
-
-            groupedItems
-
-            ) {
-
-        string sheetName =
-
-                safeSheetName(
-
-                        pair.first
-
-                );
+    for (const auto& pair : groupedItems) {
+        string sheetName = safeSheetName(pair.first);
 
         XLWorksheet sheet;
 
-        if (
+        if (firstSheet) {
+            sheet = doc.workbook().worksheet("Sheet1");
+            sheet.setName( sheetName );
 
-                firstSheet
-
-                ) {
-
-            sheet =
-
-                    doc
-                            .workbook()
-                            .worksheet(
-                                    "Sheet1"
-                            );
-
-            sheet.setName(
-                    sheetName
-            );
-
-            firstSheet =
-                    false;
+            firstSheet = false;
         }
 
         else {
-
-            doc
-                    .workbook()
-
-                    .addWorksheet(
-                            sheetName
-                    );
-
-            sheet =
-
-                    doc
-                            .workbook()
-
-                            .worksheet(
-                                    sheetName
-                            );
+            doc.workbook().addWorksheet(sheetName);
+            sheet = doc.workbook().worksheet(sheetName);
         }
 
         writeHeader(
@@ -379,30 +128,14 @@ void ExcelExporter::exportToExcel(
 
         int row = 2;
 
-        for (
+        for (const Item& item : pair.second) {
 
-                const Item&
-                item :
-
-                pair.second
-
-                ) {
-
-            writeItem(
-
-                    sheet,
-
-                    row,
-
-                    item
-            );
-
+            writeItem(sheet, row, item);
             row++;
         }
     }
 
     doc.save();
-
     doc.close();
 
 #endif
