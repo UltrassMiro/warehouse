@@ -1,4 +1,5 @@
 #include "ExcelExporter.h"
+
 #include <stdexcept>
 #include <map>
 #include <vector>
@@ -55,7 +56,8 @@ void ExcelExporter::exportToExcel(Warehouse& warehouse, const string& filePath) 
         "Tools",
         "Screws and nuts",
         "Paints",
-        "Uniform"
+        "Uniform",
+        "Other"
     };
 
     map<string, vector<Item>> groupedItems;
@@ -63,8 +65,6 @@ void ExcelExporter::exportToExcel(Warehouse& warehouse, const string& filePath) 
     for (const string& category : categories) {
         groupedItems[category] = {};
     }
-
-    groupedItems["Other"] = {};
 
     for (const Item& item : warehouse.getItems()) {
         string category = item.getCategory();

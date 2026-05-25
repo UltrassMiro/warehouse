@@ -37,7 +37,7 @@ void FileManager::save(Warehouse& warehouse) {
 }
 // Перебір усіх файлів у папці data
 void FileManager::load(Warehouse& warehouse) {
-    vector<string> categories = {"Tools","Paints","Screws"};
+    vector<string> categories = {"Tools","Paints","Screws and nuts, Uniform, Other"};
 
     for (auto& cat : categories) {
         ifstream file(getFile(cat));

@@ -289,40 +289,32 @@ void MainWindow::refreshCategories() {
 }
 
 void MainWindow::addItem() {
-
     QDialog dialog(this);
-
-    dialog.setWindowTitle(
-        "Add product"
-    );
+    dialog.setWindowTitle("Add product");
 
     QFormLayout form(&dialog);
 
     QLineEdit nameEdit;
     QSpinBox quantitySpin;
-    QLineEdit categoryEdit;
+    QComboBox categoryCombo;
+
+    categoryCombo.addItems({
+        "Tools",
+        "Screws and nuts",
+        "Paints",
+        "Uniform",
+        "Other"
+    });
 
     quantitySpin.setMinimum(0);
     quantitySpin.setMaximum(1000000);
 
-    form.addRow(
-        "Name:",
-        &nameEdit
-    );
-
-    form.addRow(
-        "Quantity:",
-        &quantitySpin
-    );
-
-    form.addRow(
-        "Category:",
-        &categoryEdit
-    );
+    form.addRow("Name:", &nameEdit);
+    form.addRow("Quantity:", &quantitySpin);
+    form.addRow("Category:", &categoryCombo);
 
     QDialogButtonBox buttons(
-        QDialogButtonBox::Ok
-        |
+        QDialogButtonBox::Ok |
         QDialogButtonBox::Cancel
     );
 
@@ -342,32 +334,16 @@ void MainWindow::addItem() {
         &QDialog::reject
     );
 
-    if (
-        dialog.exec()
-        ==
-        QDialog::Accepted
-    ) {
+    if (dialog.exec() == QDialog::Accepted) {
+        QString name = nameEdit.text().trimmed();
+        QString category = categoryCombo.currentText();
 
-        QString name =
-            nameEdit.text()
-            .trimmed();
-
-        QString category =
-            categoryEdit.text()
-            .trimmed();
-
-        if (
-            name.isEmpty()
-            ||
-            category.isEmpty()
-        ) {
-
+        if (name.isEmpty()) {
             QMessageBox::warning(
                 this,
                 "Error",
-                "Name and category cannot be empty."
+                "Name cannot be empty."
             );
-
             return;
         }
 
@@ -380,9 +356,7 @@ void MainWindow::addItem() {
         );
 
         saveData();
-
         refreshCategories();
-
         refreshTable();
     }
 }
@@ -419,10 +393,23 @@ void MainWindow::editItem() {
     );
 
     QSpinBox quantitySpin;
+    QComboBox categoryCombo;
 
-    QLineEdit categoryEdit(
+    categoryCombo.addItems({
+        "Tools",
+        "Screws and nuts",
+        "Paints",
+        "Uniform",
+        "Other"
+    });
+
+    int categoryIndex = categoryCombo.findText(
         QString::fromStdString(item->getCategory())
     );
+
+    if (categoryIndex >= 0) {
+        categoryCombo.setCurrentIndex(categoryIndex);
+    }
 
     quantitySpin.setMinimum(0);
     quantitySpin.setMaximum(1000000);
@@ -430,7 +417,7 @@ void MainWindow::editItem() {
 
     form.addRow("Name:", &nameEdit);
     form.addRow("Quantity:", &quantitySpin);
-    form.addRow("Category:", &categoryEdit);
+    form.addRow("Category:", &categoryCombo);
 
     QDialogButtonBox buttons(
         QDialogButtonBox::Ok |
@@ -455,13 +442,13 @@ void MainWindow::editItem() {
 
     if (dialog.exec() == QDialog::Accepted) {
         QString name = nameEdit.text().trimmed();
-        QString category = categoryEdit.text().trimmed();
+        QString category = categoryCombo.currentText();
 
-        if (name.isEmpty() || category.isEmpty()) {
+        if (name.isEmpty()) {
             QMessageBox::warning(
                 this,
                 "Error",
-                "Name and category cannot be empty."
+                "Name cannot be empty."
             );
             return;
         }
@@ -520,48 +507,36 @@ void MainWindow::deleteItem() {
 }
 
 void MainWindow::importExcel() {
+    QString filePath = QFileDialog::getOpenFileName(
+        this,
+        "Import Excel",
+        "",
+        "Excel files (*.xlsx)"
+    );
 
-    QString path =
-        QFileDialog::
-        getOpenFileName(
-            this,
-            "Import Excel",
-            "",
-            "Excel (*.xlsx)"
-        );
-
-    if (
-        path.isEmpty()
-    )
+    if (filePath.isEmpty()) {
         return;
+    }
 
     try {
+        warehouse.clear();
 
-        ExcelImporter::
-        importFromExcel(
+        ExcelImporter::importFromExcel(
             warehouse,
-            path.toStdString()
+            filePath.toStdString()
         );
 
         saveData();
-
         refreshCategories();
-
         refreshTable();
 
-        QMessageBox::
-        information(
+        QMessageBox::information(
             this,
             "Success",
-            "Import completed."
+            "Excel import completed."
         );
-
-    } catch (
-        exception& e
-    ) {
-
-        QMessageBox::
-        critical(
+    } catch (const std::exception& e) {
+        QMessageBox::critical(
             this,
             "Import error",
             e.what()
