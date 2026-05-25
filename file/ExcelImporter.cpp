@@ -5,85 +5,213 @@
 #include <vector>
 
 #ifdef OPENXLSX_FOUND
+
 #include <OpenXLSX.hpp>
+
 using namespace OpenXLSX;
+
 #endif
 
 using namespace std;
 
-static string normalizeCategoryName(const string& sheetName) {
-    if (sheetName == "Screws_and_nuts") {
-        return "Screws and nuts";
-    }
+/*
+ Вирівнює назви категорій,
+ щоб імпорт не ламався
+ через різні назви листів
+*/
+static string normalizeCategoryName(
+        const string& sheetName
+) {
 
-    if (sheetName == "Screws and bolts") {
-        return "Screws and nuts";
+    if (
+            sheetName ==
+            "Screws_and_nuts"
+            ) {
+
+        return
+                "Screws and nuts";
     }
 
     return sheetName;
 }
 
-void ExcelImporter::importFromExcel(Warehouse& warehouse, const string& filePath) {
+/*
+ Імпортує всі листи Excel,
+ оновлює існуючі товари,
+ додає нові
+*/
+void ExcelImporter::importFromExcel(
+
+        Warehouse& warehouse,
+
+        const string& filePath
+
+) {
+
 #ifndef OPENXLSX_FOUND
-    throw runtime_error("OpenXLSX is not connected. Excel import is impossible.");
+
+    throw runtime_error(
+            "OpenXLSX not connected."
+    );
+
 #else
+
     XLDocument doc;
-    doc.open(filePath);
 
-    vector<string> sheetNames = doc.workbook().worksheetNames();
+    doc.open(
+            filePath
+    );
 
-    for (const string& sheetName : sheetNames) {
-        auto sheet = doc.workbook().worksheet(sheetName);
+    vector<string>
+            sheetNames =
 
-        string category = normalizeCategoryName(sheetName);
+            doc
+                    .workbook()
+                    .worksheetNames();
+
+    for (
+
+            const string&
+            sheetName :
+
+            sheetNames
+
+            ) {
+
+        auto sheet =
+
+                doc
+                        .workbook()
+                        .worksheet(
+                                sheetName
+                        );
+
+        string category =
+
+                normalizeCategoryName(
+                        sheetName
+                );
 
         int row = 2;
 
         while (true) {
+
             string name;
 
             try {
-                name = sheet.cell(row, 2).value().get<string>();
+
+                name =
+
+                        sheet
+
+                                .cell(
+                                        row,
+                                        2
+                                )
+
+                                .value()
+
+                                .get<string>();
+
             } catch (...) {
+
                 break;
             }
 
-            if (name.empty()) {
+            if (
+                    name.empty()
+                    )
                 break;
-            }
 
             int id = 0;
             int quantity = 0;
 
             try {
-                id = sheet.cell(row, 1).value().get<int>();
+
+                id =
+
+                        sheet
+
+                                .cell(
+                                        row,
+                                        1
+                                )
+
+                                .value()
+
+                                .get<int>();
+
             } catch (...) {
-                id = row - 1;
+
+                id =
+                        row - 1;
             }
 
             try {
-                quantity = sheet.cell(row, 3).value().get<int>();
+
+                quantity =
+
+                        sheet
+
+                                .cell(
+                                        row,
+                                        3
+                                )
+
+                                .value()
+
+                                .get<int>();
+
             } catch (...) {
+
                 quantity = 0;
             }
 
-            Item* existingItem = warehouse.findItemById(id);
+            /*
+             Якщо товар існує —
+             оновлюємо
 
-            if (existingItem != nullptr) {
+             Якщо ні —
+             додаємо
+            */
+
+            Item* existingItem =
+
+                    warehouse
+                            .findItemById(
+                                    id
+                            );
+
+            if (
+                    existingItem
+                    != nullptr
+                    ) {
+
                 warehouse.updateItem(
-                    id,
-                    name,
-                    quantity,
-                    category
-                );
-            } else {
-                warehouse.addItem(
-                    Item(
+
                         id,
+
                         name,
+
                         quantity,
+
                         category
-                    )
+                );
+
+            } else {
+
+                warehouse.addItem(
+
+                        Item(
+
+                                id,
+
+                                name,
+
+                                quantity,
+
+                                category
+                        )
                 );
             }
 
@@ -92,5 +220,6 @@ void ExcelImporter::importFromExcel(Warehouse& warehouse, const string& filePath
     }
 
     doc.close();
+
 #endif
 }

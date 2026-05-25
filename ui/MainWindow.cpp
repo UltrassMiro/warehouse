@@ -25,7 +25,7 @@ MainWindow::MainWindow(QWidget* parent)
     refreshTable();
     refreshTotal();
 }
-
+// Qt інтерфейс
 void MainWindow::setupUi() {
     setWindowTitle("Warehouse Manager");
     resize(900, 600);
@@ -64,7 +64,6 @@ void MainWindow::setupUi() {
     deleteButton = new QPushButton("Delete", this);
     importButton = new QPushButton("Import Excel", this);
     exportButton = new QPushButton("Export Excel", this);
-    refreshButton = new QPushButton("Refresh", this);
 
     buttonLayout->addWidget(addButton);
     buttonLayout->addWidget(editButton);
@@ -72,7 +71,6 @@ void MainWindow::setupUi() {
     buttonLayout->addStretch();
     buttonLayout->addWidget(importButton);
     buttonLayout->addWidget(exportButton);
-    buttonLayout->addWidget(refreshButton);
 
     totalLabel = new QLabel(this);
 
@@ -96,9 +94,6 @@ void MainWindow::setupUi() {
     connect(exportButton, &QPushButton::clicked,
             this, &MainWindow::exportExcel);
 
-    connect(refreshButton, &QPushButton::clicked,
-            this, &MainWindow::refreshTable);
-
     connect(searchLine, &QLineEdit::textChanged,
             this, &MainWindow::searchChanged);
 
@@ -107,7 +102,7 @@ void MainWindow::setupUi() {
             this,
             &MainWindow::categoryChanged);
 }
-
+// Стилі для інтерфейсу
 void MainWindow::setupStyle() {
     setStyleSheet(
         "QMainWindow { background-color: #f4f6f8; }"
@@ -137,7 +132,7 @@ int MainWindow::getSelectedItemId() const {
             ->text()
             .toInt();
 }
-
+// Оновлення таблиці
 void MainWindow::refreshTable() {
 
     QString search =
@@ -287,7 +282,7 @@ void MainWindow::refreshCategories() {
 
     categoryBox->blockSignals(false);
 }
-
+// Додавання
 void MainWindow::addItem() {
     QDialog dialog(this);
     dialog.setWindowTitle("Add product");
@@ -360,6 +355,7 @@ void MainWindow::addItem() {
         refreshTable();
     }
 }
+// Редагування
 void MainWindow::editItem() {
     int id = getSelectedItemId();
 
@@ -465,6 +461,7 @@ void MainWindow::editItem() {
         refreshTable();
     }
 }
+// Видалення
 void MainWindow::deleteItem() {
 
     int id =
@@ -505,43 +502,7 @@ void MainWindow::deleteItem() {
         refreshTable();
     }
 }
-
-void MainWindow::importExcel() {
-    QString filePath = QFileDialog::getOpenFileName(
-        this,
-        "Import Excel",
-        "",
-        "Excel files (*.xlsx)"
-    );
-
-    if (filePath.isEmpty()) {
-        return;
-    }
-
-    try {
-        ExcelImporter::importFromExcel(
-            warehouse,
-            filePath.toStdString()
-        );
-
-        saveData();
-        refreshCategories();
-        refreshTable();
-
-        QMessageBox::information(
-            this,
-            "Success",
-            "Excel import completed."
-        );
-    } catch (const exception& e) {
-        QMessageBox::critical(
-            this,
-            "Import error",
-            e.what()
-        );
-    }
-}
-
+// Експорт в Excel
 void MainWindow::exportExcel() {
 
     QString path =
@@ -581,6 +542,42 @@ void MainWindow::exportExcel() {
         critical(
             this,
             "Export error",
+            e.what()
+        );
+    }
+}
+// Імпорт з Excel
+void MainWindow::importExcel() {
+    QString filePath = QFileDialog::getOpenFileName(
+        this,
+        "Import Excel",
+        "",
+        "Excel files (*.xlsx)"
+    );
+
+    if (filePath.isEmpty()) {
+        return;
+    }
+
+    try {
+        ExcelImporter::importFromExcel(
+            warehouse,
+            filePath.toStdString()
+        );
+
+        saveData();
+        refreshCategories();
+        refreshTable();
+
+        QMessageBox::information(
+            this,
+            "Success",
+            "Excel import completed."
+        );
+    } catch (const exception& e) {
+        QMessageBox::critical(
+            this,
+            "Import error",
             e.what()
         );
     }
