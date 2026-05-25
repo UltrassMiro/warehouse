@@ -1,60 +1,98 @@
 #include "FileManager.h"
+
 #include <fstream>
 #include <sstream>
-#include <map>
-#include <set>
+#include <iostream>
+
 using namespace std;
 
+static bool safeStoi(const string& text, int& value) {
+    try {
+        if (text.empty()) {
+            return false;
+        }
 
-string FileManager::getFile(const string& category) {
-    return "../data/" + category + ".csv";
+        size_t pos = 0;
+        value = stoi(text, &pos);
+
+        return pos == text.size();
+    } catch (...) {
+        return false;
+    }
 }
+
+FileManager::FileManager(const string& filePath)
+    : filePath(filePath) {}
 
 void FileManager::save(Warehouse& warehouse) {
+    ofstream file(filePath);
 
-    // Отримання інфо про категорії
-    set<string> categories;
-    for (auto& item : warehouse.getItems()) {
-        categories.insert(item.getCategory());
+    if (!file.is_open()) {
+        return;
     }
 
-    // Чистка файлів
-    for (auto& cat : categories) {
-        ofstream file(getFile(cat), ios::trunc);
+    for (const Item& item : warehouse.getItems()) {
+        file << item.getId() << ";"
+             << item.getName() << ";"
+             << item.getQuantity() << ";"
+             << item.getCategory() << endl;
     }
 
-    // Збереження
-    map<string, ofstream> files;
-
-    for (auto& item : warehouse.getItems()) {
-        string fileName = getFile(item.getCategory());
-
-        if (!files[fileName].is_open())
-            files[fileName].open(fileName, ios::app);
-
-        files[fileName] << item.toCSV() << "\n";
-    }
+    file.close();
 }
-// Перебір усіх файлів у папці data
+
 void FileManager::load(Warehouse& warehouse) {
-    vector<string> categories = {"Tools","Paints","Screws and nuts, Uniform, Other"};
+    ifstream file(filePath);
 
-    for (auto& cat : categories) {
-        ifstream file(getFile(cat));
-        string line;
-
-        while (getline(file, line)) {
-            stringstream ss(line);
-            string id, name, qty;
-
-            getline(ss, id, ',');
-            getline(ss, name, ',');
-            getline(ss, qty, ',');
-
-            warehouse.addItem(Item(
-                    stoi(id),
-                    name,stoi(qty),cat
-            ));
-        }
+    if (!file.is_open()) {
+        return;
     }
+
+    warehouse.clear();
+
+    string line;
+
+    while (getline(file, line)) {
+        if (line.empty()) {
+            continue;
+        }
+
+        stringstream ss(line);
+
+        string idText;
+        string name;
+        string quantityText;
+        string category;
+
+        getline(ss, idText, ';');
+        getline(ss, name, ';');
+        getline(ss, quantityText, ';');
+        getline(ss, category, ';');
+
+        int id = 0;
+        int quantity = 0;
+
+        if (!safeStoi(idText, id)) {
+            continue;
+        }
+
+        if (!safeStoi(quantityText, quantity)) {
+            continue;
+        }
+
+        if (name.empty() || category.empty()) {
+            continue;
+        }
+
+        warehouse.addItem(
+            Item(
+                id,
+                name,
+                quantity,
+                category
+            )
+        );
+    }
+
+    file.close();
 }

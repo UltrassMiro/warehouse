@@ -1,4 +1,5 @@
 #include "ExcelImporter.h"
+
 #include <stdexcept>
 #include <string>
 #include <vector>
@@ -9,6 +10,18 @@ using namespace OpenXLSX;
 #endif
 
 using namespace std;
+
+static string normalizeCategoryName(const string& sheetName) {
+    if (sheetName == "Screws_and_nuts") {
+        return "Screws and nuts";
+    }
+
+    if (sheetName == "Screws and bolts") {
+        return "Screws and nuts";
+    }
+
+    return sheetName;
+}
 
 void ExcelImporter::importFromExcel(Warehouse& warehouse, const string& filePath) {
 #ifndef OPENXLSX_FOUND
@@ -21,6 +34,8 @@ void ExcelImporter::importFromExcel(Warehouse& warehouse, const string& filePath
 
     for (const string& sheetName : sheetNames) {
         auto sheet = doc.workbook().worksheet(sheetName);
+
+        string category = normalizeCategoryName(sheetName);
 
         int row = 2;
 
@@ -37,22 +52,40 @@ void ExcelImporter::importFromExcel(Warehouse& warehouse, const string& filePath
                 break;
             }
 
-            int id = sheet.cell(row, 1).value().get<int>();
-            int quantity = sheet.cell(row, 3).value().get<int>();
-
-            string category;
+            int id = 0;
+            int quantity = 0;
 
             try {
-                category = sheet.cell(row, 4).value().get<string>();
+                id = sheet.cell(row, 1).value().get<int>();
             } catch (...) {
-                category = sheetName;
+                id = row - 1;
             }
 
-            if (category.empty()) {
-                category = sheetName;
+            try {
+                quantity = sheet.cell(row, 3).value().get<int>();
+            } catch (...) {
+                quantity = 0;
             }
 
-            warehouse.addItem(Item(id, name, quantity, category));
+            Item* existingItem = warehouse.findItemById(id);
+
+            if (existingItem != nullptr) {
+                warehouse.updateItem(
+                    id,
+                    name,
+                    quantity,
+                    category
+                );
+            } else {
+                warehouse.addItem(
+                    Item(
+                        id,
+                        name,
+                        quantity,
+                        category
+                    )
+                );
+            }
 
             row++;
         }

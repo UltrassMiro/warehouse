@@ -519,8 +519,6 @@ void MainWindow::importExcel() {
     }
 
     try {
-        warehouse.clear();
-
         ExcelImporter::importFromExcel(
             warehouse,
             filePath.toStdString()
@@ -535,7 +533,7 @@ void MainWindow::importExcel() {
             "Success",
             "Excel import completed."
         );
-    } catch (const std::exception& e) {
+    } catch (const exception& e) {
         QMessageBox::critical(
             this,
             "Import error",

@@ -1,16 +1,18 @@
 #ifndef FILEMANAGER_H
 #define FILEMANAGER_H
 
+#include <string>
 #include "../core/Warehouse.h"
-#include <map>
+
 using namespace std;
 
-// Збереження/читання БД
 class FileManager {
 private:
-    string getFile(const string& category);
+    string filePath;
 
 public:
+    explicit FileManager(const string& filePath = "warehouse.csv");
+
     void save(Warehouse& warehouse);
     void load(Warehouse& warehouse);
 };
