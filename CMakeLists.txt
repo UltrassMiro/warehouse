@@ -56,6 +56,6 @@ add_executable(warehouse_tests
         file/FileManager.cpp
 )
 
-target_link_libraries(warehouse_tests PRIVATE gtest gtest_main)
+target_link_libraries(warehouse_tests PRIVATE gtest gtest_main gmock gmock_main)
 
 add_test(NAME WarehouseTests COMMAND warehouse_tests)

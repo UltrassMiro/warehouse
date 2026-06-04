@@ -156,13 +156,13 @@ build warehouse.exe: CXX_EXECUTABLE_LINKER__warehouse_Debug CMakeFiles/warehouse
 #############################################
 # Order-only phony target for warehouse_tests
 
-build cmake_object_order_depends_target_warehouse_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main warehouse_tests_autogen warehouse_tests_autogen/mocs_compilation.cpp warehouse_tests_autogen/timestamp warehouse_tests_autogen_timestamp_deps
+build cmake_object_order_depends_target_warehouse_tests: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gmock_main cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main warehouse_tests_autogen warehouse_tests_autogen/mocs_compilation.cpp warehouse_tests_autogen/timestamp warehouse_tests_autogen_timestamp_deps
 
 build CMakeFiles/warehouse_tests.dir/warehouse_tests_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__warehouse_tests_unscanned_Debug C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_warehouse_tests
   CONFIG = Debug
   DEP_FILE = CMakeFiles\warehouse_tests.dir\warehouse_tests_autogen\mocs_compilation.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock
   OBJECT_DIR = CMakeFiles\warehouse_tests.dir
   OBJECT_FILE_DIR = CMakeFiles\warehouse_tests.dir\warehouse_tests_autogen
 
@@ -170,7 +170,7 @@ build CMakeFiles/warehouse_tests.dir/tests/WarehouseTests.cpp.obj: CXX_COMPILER_
   CONFIG = Debug
   DEP_FILE = CMakeFiles\warehouse_tests.dir\tests\WarehouseTests.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock
   OBJECT_DIR = CMakeFiles\warehouse_tests.dir
   OBJECT_FILE_DIR = CMakeFiles\warehouse_tests.dir\tests
 
@@ -178,7 +178,7 @@ build CMakeFiles/warehouse_tests.dir/models/Item.cpp.obj: CXX_COMPILER__warehous
   CONFIG = Debug
   DEP_FILE = CMakeFiles\warehouse_tests.dir\models\Item.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock
   OBJECT_DIR = CMakeFiles\warehouse_tests.dir
   OBJECT_FILE_DIR = CMakeFiles\warehouse_tests.dir\models
 
@@ -186,7 +186,7 @@ build CMakeFiles/warehouse_tests.dir/core/Warehouse.cpp.obj: CXX_COMPILER__wareh
   CONFIG = Debug
   DEP_FILE = CMakeFiles\warehouse_tests.dir\core\Warehouse.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock
   OBJECT_DIR = CMakeFiles\warehouse_tests.dir
   OBJECT_FILE_DIR = CMakeFiles\warehouse_tests.dir\core
 
@@ -194,7 +194,7 @@ build CMakeFiles/warehouse_tests.dir/file/FileManager.cpp.obj: CXX_COMPILER__war
   CONFIG = Debug
   DEP_FILE = CMakeFiles\warehouse_tests.dir\file\FileManager.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock
   OBJECT_DIR = CMakeFiles\warehouse_tests.dir
   OBJECT_FILE_DIR = CMakeFiles\warehouse_tests.dir\file
 
@@ -206,10 +206,10 @@ build CMakeFiles/warehouse_tests.dir/file/FileManager.cpp.obj: CXX_COMPILER__war
 #############################################
 # Link the executable warehouse_tests.exe
 
-build warehouse_tests.exe: CXX_EXECUTABLE_LINKER__warehouse_tests_Debug CMakeFiles/warehouse_tests.dir/warehouse_tests_autogen/mocs_compilation.cpp.obj CMakeFiles/warehouse_tests.dir/tests/WarehouseTests.cpp.obj CMakeFiles/warehouse_tests.dir/models/Item.cpp.obj CMakeFiles/warehouse_tests.dir/core/Warehouse.cpp.obj CMakeFiles/warehouse_tests.dir/file/FileManager.cpp.obj | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a warehouse_tests_autogen warehouse_tests_autogen_timestamp_deps
+build warehouse_tests.exe: CXX_EXECUTABLE_LINKER__warehouse_tests_Debug CMakeFiles/warehouse_tests.dir/warehouse_tests_autogen/mocs_compilation.cpp.obj CMakeFiles/warehouse_tests.dir/tests/WarehouseTests.cpp.obj CMakeFiles/warehouse_tests.dir/models/Item.cpp.obj CMakeFiles/warehouse_tests.dir/core/Warehouse.cpp.obj CMakeFiles/warehouse_tests.dir/file/FileManager.cpp.obj | lib/libgtest.a lib/libgtest_main.a lib/libgmock.a lib/libgmock_main.a lib/libgmock.a lib/libgtest.a || lib/libgmock.a lib/libgmock_main.a lib/libgtest.a lib/libgtest_main.a warehouse_tests_autogen warehouse_tests_autogen_timestamp_deps
   CONFIG = Debug
   FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  lib/libgmock.a  lib/libgmock_main.a  lib/libgmock.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\warehouse_tests.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -310,7 +310,7 @@ build warehouse_autogen: phony CMakeFiles/warehouse_autogen warehouse_autogen/ti
 #############################################
 # Utility command for warehouse_tests_autogen_timestamp_deps
 
-build warehouse_tests_autogen_timestamp_deps: phony lib/libgtest.a lib/libgtest_main.a
+build warehouse_tests_autogen_timestamp_deps: phony lib/libgmock.a lib/libgmock_main.a lib/libgtest.a lib/libgtest_main.a
 
 
 #############################################
@@ -333,7 +333,7 @@ build warehouse_autogen/timestamp warehouse_autogen/mocs_compilation.cpp | ${cma
 #############################################
 # Custom command for warehouse_tests_autogen\timestamp
 
-build warehouse_tests_autogen/timestamp warehouse_tests_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}warehouse_tests_autogen/timestamp ${cmake_ninja_workdir}warehouse_tests_autogen/mocs_compilation.cpp: CUSTOM_COMMAND C$:/Qt/6.11.1/mingw_64/bin/moc.exe || _deps/googletest-build/googletest/gtest_autogen _deps/googletest-build/googletest/gtest_autogen_timestamp_deps _deps/googletest-build/googletest/gtest_main_autogen _deps/googletest-build/googletest/gtest_main_autogen_timestamp_deps lib/libgtest.a lib/libgtest_main.a warehouse_tests_autogen_timestamp_deps
+build warehouse_tests_autogen/timestamp warehouse_tests_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}warehouse_tests_autogen/timestamp ${cmake_ninja_workdir}warehouse_tests_autogen/mocs_compilation.cpp: CUSTOM_COMMAND C$:/Qt/6.11.1/mingw_64/bin/moc.exe || _deps/googletest-build/googlemock/gmock_autogen _deps/googletest-build/googlemock/gmock_autogen_timestamp_deps _deps/googletest-build/googlemock/gmock_main_autogen _deps/googletest-build/googlemock/gmock_main_autogen_timestamp_deps _deps/googletest-build/googletest/gtest_autogen _deps/googletest-build/googletest/gtest_autogen_timestamp_deps _deps/googletest-build/googletest/gtest_main_autogen _deps/googletest-build/googletest/gtest_main_autogen_timestamp_deps lib/libgmock.a lib/libgmock_main.a lib/libgtest.a lib/libgtest_main.a warehouse_tests_autogen_timestamp_deps
   COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E cmake_autogen C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/CMakeFiles/warehouse_tests_autogen.dir/AutogenInfo.json Debug && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E touch C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/timestamp && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E cmake_transform_depfile Ninja gccdepfile C:/Users/Dimon/CLionProjects/warehouse C:/Users/Dimon/CLionProjects/warehouse C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/deps C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/CMakeFiles/d/6975e720257477ae82d7a5cd2a2ba45dc019a3b1642f5d09804aab7ecdd75890.d"
   DESC = Automatic MOC for target warehouse_tests
   depfile = CMakeFiles\d\6975e720257477ae82d7a5cd2a2ba45dc019a3b1642f5d09804aab7ecdd75890.d
@@ -350,7 +350,7 @@ build CMakeFiles/warehouse_autogen | ${cmake_ninja_workdir}CMakeFiles/warehouse_
 #############################################
 # Phony custom command for CMakeFiles\warehouse_tests_autogen
 
-build CMakeFiles/warehouse_tests_autogen | ${cmake_ninja_workdir}CMakeFiles/warehouse_tests_autogen: phony warehouse_tests_autogen/timestamp || _deps/googletest-build/googletest/gtest_autogen _deps/googletest-build/googletest/gtest_autogen_timestamp_deps _deps/googletest-build/googletest/gtest_main_autogen _deps/googletest-build/googletest/gtest_main_autogen_timestamp_deps lib/libgtest.a lib/libgtest_main.a warehouse_tests_autogen_timestamp_deps
+build CMakeFiles/warehouse_tests_autogen | ${cmake_ninja_workdir}CMakeFiles/warehouse_tests_autogen: phony warehouse_tests_autogen/timestamp || _deps/googletest-build/googlemock/gmock_autogen _deps/googletest-build/googlemock/gmock_autogen_timestamp_deps _deps/googletest-build/googlemock/gmock_main_autogen _deps/googletest-build/googlemock/gmock_main_autogen_timestamp_deps _deps/googletest-build/googletest/gtest_autogen _deps/googletest-build/googletest/gtest_autogen_timestamp_deps _deps/googletest-build/googletest/gtest_main_autogen _deps/googletest-build/googletest/gtest_main_autogen_timestamp_deps lib/libgmock.a lib/libgmock_main.a lib/libgtest.a lib/libgtest_main.a warehouse_tests_autogen_timestamp_deps
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
