@@ -149,7 +149,7 @@ void MainWindow::refreshTable() {
 
         table->insertRow(row);
 
-        table->setItem(row, 0, new QTableWidgetItem(QString::number( item.getId())));
+        table->setItem(row, 0, new QTableWidgetItem(QString::number(item.getId())));
         table->setItem(row, 1, new QTableWidgetItem(name));
         table->setItem(row, 2, new QTableWidgetItem(QString::number(item.getQuantity())));
         table->setItem(row, 3, new QTableWidgetItem(itemCategory));
@@ -168,7 +168,7 @@ void MainWindow::categoryChanged() {
 
 void MainWindow::refreshTotal() {
     totalLabel->setText("Total amount of products: "
-        + QString::number( warehouse.getTotalItems()));
+        + QString::number(warehouse.getTotalItems()));
 }
 
 void MainWindow::refreshCategories() {
@@ -180,14 +180,12 @@ void MainWindow::refreshCategories() {
 
     QSet<QString> categories;
 
-    for (const auto& item :
-         warehouse.getItems()) {
-
+    for (const auto& item : warehouse.getItems()) {
         categories.insert(QString::fromStdString( item.getCategory()));
     }
 
     for (const QString& category : categories) {
-        categoryBox->addItem( category);
+        categoryBox->addItem(category);
     }
 
     int index = categoryBox->findText(current);

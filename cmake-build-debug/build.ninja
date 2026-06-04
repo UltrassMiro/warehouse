@@ -112,15 +112,6 @@ build CMakeFiles/warehouse.dir/file/ExcelExporter.cpp.obj: CXX_COMPILER__warehou
   OBJECT_DIR = CMakeFiles\warehouse.dir
   OBJECT_FILE_DIR = CMakeFiles\warehouse.dir\file
 
-build CMakeFiles/warehouse.dir/utils/InputHelper.cpp.obj: CXX_COMPILER__warehouse_unscanned_Debug C$:/Users/Dimon/CLionProjects/warehouse/utils/InputHelper.cpp || cmake_object_order_depends_target_warehouse
-  CONFIG = Debug
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DOPENXLSX_FOUND -DOPENXLSX_STATIC_DEFINE -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\warehouse.dir\utils\InputHelper.cpp.obj.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_autogen/include -isystem C:/Qt/6.11.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.11.1/mingw_64/include -isystem C:/Qt/6.11.1/mingw_64/include/QtCore -isystem C:/Qt/6.11.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.11.1/mingw_64/include/QtGui -isystem C:/OpenXLSX/include/OpenXLSX
-  OBJECT_DIR = CMakeFiles\warehouse.dir
-  OBJECT_FILE_DIR = CMakeFiles\warehouse.dir\utils
-
 build CMakeFiles/warehouse.dir/file/ExcelImporter.cpp.obj: CXX_COMPILER__warehouse_unscanned_Debug C$:/Users/Dimon/CLionProjects/warehouse/file/ExcelImporter.cpp || cmake_object_order_depends_target_warehouse
   CONFIG = Debug
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DOPENXLSX_FOUND -DOPENXLSX_STATIC_DEFINE -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
@@ -130,6 +121,15 @@ build CMakeFiles/warehouse.dir/file/ExcelImporter.cpp.obj: CXX_COMPILER__warehou
   OBJECT_DIR = CMakeFiles\warehouse.dir
   OBJECT_FILE_DIR = CMakeFiles\warehouse.dir\file
 
+build CMakeFiles/warehouse.dir/utils/InputHelper.cpp.obj: CXX_COMPILER__warehouse_unscanned_Debug C$:/Users/Dimon/CLionProjects/warehouse/utils/InputHelper.cpp || cmake_object_order_depends_target_warehouse
+  CONFIG = Debug
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DOPENXLSX_FOUND -DOPENXLSX_STATIC_DEFINE -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\warehouse.dir\utils\InputHelper.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_autogen/include -isystem C:/Qt/6.11.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.11.1/mingw_64/include -isystem C:/Qt/6.11.1/mingw_64/include/QtCore -isystem C:/Qt/6.11.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.11.1/mingw_64/include/QtGui -isystem C:/OpenXLSX/include/OpenXLSX
+  OBJECT_DIR = CMakeFiles\warehouse.dir
+  OBJECT_FILE_DIR = CMakeFiles\warehouse.dir\utils
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target warehouse
@@ -138,7 +138,7 @@ build CMakeFiles/warehouse.dir/file/ExcelImporter.cpp.obj: CXX_COMPILER__warehou
 #############################################
 # Link the executable warehouse.exe
 
-build warehouse.exe: CXX_EXECUTABLE_LINKER__warehouse_Debug CMakeFiles/warehouse.dir/warehouse_autogen/mocs_compilation.cpp.obj CMakeFiles/warehouse.dir/main.cpp.obj CMakeFiles/warehouse.dir/models/Item.cpp.obj CMakeFiles/warehouse.dir/core/Warehouse.cpp.obj CMakeFiles/warehouse.dir/ui/MainWindow.cpp.obj CMakeFiles/warehouse.dir/file/FileManager.cpp.obj CMakeFiles/warehouse.dir/file/ExcelExporter.cpp.obj CMakeFiles/warehouse.dir/utils/InputHelper.cpp.obj CMakeFiles/warehouse.dir/file/ExcelImporter.cpp.obj | C$:/Qt/6.11.1/mingw_64/lib/libQt6Widgets.a C$:/OpenXLSX/lib/libOpenXLSX.a C$:/Qt/6.11.1/mingw_64/lib/libQt6Gui.a C$:/Qt/6.11.1/mingw_64/lib/libQt6Core.a C$:/OpenXLSX/lib/OpenXLSX/libpugixml.a C$:/OpenXLSX/lib/OpenXLSX/libminiz.a C$:/OpenXLSX/lib/OpenXLSX/libnowide.a || warehouse_autogen warehouse_autogen_timestamp_deps
+build warehouse.exe: CXX_EXECUTABLE_LINKER__warehouse_Debug CMakeFiles/warehouse.dir/warehouse_autogen/mocs_compilation.cpp.obj CMakeFiles/warehouse.dir/main.cpp.obj CMakeFiles/warehouse.dir/models/Item.cpp.obj CMakeFiles/warehouse.dir/core/Warehouse.cpp.obj CMakeFiles/warehouse.dir/ui/MainWindow.cpp.obj CMakeFiles/warehouse.dir/file/FileManager.cpp.obj CMakeFiles/warehouse.dir/file/ExcelExporter.cpp.obj CMakeFiles/warehouse.dir/file/ExcelImporter.cpp.obj CMakeFiles/warehouse.dir/utils/InputHelper.cpp.obj | C$:/Qt/6.11.1/mingw_64/lib/libQt6Widgets.a C$:/OpenXLSX/lib/libOpenXLSX.a C$:/Qt/6.11.1/mingw_64/lib/libQt6Gui.a C$:/Qt/6.11.1/mingw_64/lib/libQt6Core.a C$:/OpenXLSX/lib/OpenXLSX/libpugixml.a C$:/OpenXLSX/lib/OpenXLSX/libminiz.a C$:/OpenXLSX/lib/OpenXLSX/libnowide.a || warehouse_autogen warehouse_autogen_timestamp_deps
   CONFIG = Debug
   FLAGS = -g
   LINK_LIBRARIES = C:/Qt/6.11.1/mingw_64/lib/libQt6Widgets.a  C:/OpenXLSX/lib/libOpenXLSX.a  C:/Qt/6.11.1/mingw_64/lib/libQt6Gui.a  C:/Qt/6.11.1/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -ld3d11  -ldxgi  -ldxguid  -ld3d12  C:/OpenXLSX/lib/OpenXLSX/libpugixml.a  C:/OpenXLSX/lib/OpenXLSX/libminiz.a  C:/OpenXLSX/lib/OpenXLSX/libnowide.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -148,6 +148,86 @@ build warehouse.exe: CXX_EXECUTABLE_LINKER__warehouse_Debug CMakeFiles/warehouse
   TARGET_FILE = warehouse.exe
   TARGET_IMPLIB = libwarehouse.dll.a
   TARGET_PDB = warehouse.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target warehouse_tests
+
+
+#############################################
+# Order-only phony target for warehouse_tests
+
+build cmake_object_order_depends_target_warehouse_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main warehouse_tests_autogen warehouse_tests_autogen/mocs_compilation.cpp warehouse_tests_autogen/timestamp warehouse_tests_autogen_timestamp_deps
+
+build CMakeFiles/warehouse_tests.dir/warehouse_tests_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__warehouse_tests_unscanned_Debug C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_warehouse_tests
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\warehouse_tests.dir\warehouse_tests_autogen\mocs_compilation.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest
+  OBJECT_DIR = CMakeFiles\warehouse_tests.dir
+  OBJECT_FILE_DIR = CMakeFiles\warehouse_tests.dir\warehouse_tests_autogen
+
+build CMakeFiles/warehouse_tests.dir/tests/WarehouseTests.cpp.obj: CXX_COMPILER__warehouse_tests_unscanned_Debug C$:/Users/Dimon/CLionProjects/warehouse/tests/WarehouseTests.cpp || cmake_object_order_depends_target_warehouse_tests
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\warehouse_tests.dir\tests\WarehouseTests.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest
+  OBJECT_DIR = CMakeFiles\warehouse_tests.dir
+  OBJECT_FILE_DIR = CMakeFiles\warehouse_tests.dir\tests
+
+build CMakeFiles/warehouse_tests.dir/models/Item.cpp.obj: CXX_COMPILER__warehouse_tests_unscanned_Debug C$:/Users/Dimon/CLionProjects/warehouse/models/Item.cpp || cmake_object_order_depends_target_warehouse_tests
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\warehouse_tests.dir\models\Item.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest
+  OBJECT_DIR = CMakeFiles\warehouse_tests.dir
+  OBJECT_FILE_DIR = CMakeFiles\warehouse_tests.dir\models
+
+build CMakeFiles/warehouse_tests.dir/core/Warehouse.cpp.obj: CXX_COMPILER__warehouse_tests_unscanned_Debug C$:/Users/Dimon/CLionProjects/warehouse/core/Warehouse.cpp || cmake_object_order_depends_target_warehouse_tests
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\warehouse_tests.dir\core\Warehouse.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest
+  OBJECT_DIR = CMakeFiles\warehouse_tests.dir
+  OBJECT_FILE_DIR = CMakeFiles\warehouse_tests.dir\core
+
+build CMakeFiles/warehouse_tests.dir/file/FileManager.cpp.obj: CXX_COMPILER__warehouse_tests_unscanned_Debug C$:/Users/Dimon/CLionProjects/warehouse/file/FileManager.cpp || cmake_object_order_depends_target_warehouse_tests
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\warehouse_tests.dir\file\FileManager.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest
+  OBJECT_DIR = CMakeFiles\warehouse_tests.dir
+  OBJECT_FILE_DIR = CMakeFiles\warehouse_tests.dir\file
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target warehouse_tests
+
+
+#############################################
+# Link the executable warehouse_tests.exe
+
+build warehouse_tests.exe: CXX_EXECUTABLE_LINKER__warehouse_tests_Debug CMakeFiles/warehouse_tests.dir/warehouse_tests_autogen/mocs_compilation.cpp.obj CMakeFiles/warehouse_tests.dir/tests/WarehouseTests.cpp.obj CMakeFiles/warehouse_tests.dir/models/Item.cpp.obj CMakeFiles/warehouse_tests.dir/core/Warehouse.cpp.obj CMakeFiles/warehouse_tests.dir/file/FileManager.cpp.obj | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a warehouse_tests_autogen warehouse_tests_autogen_timestamp_deps
+  CONFIG = Debug
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\warehouse_tests.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = warehouse_tests.exe
+  TARGET_IMPLIB = libwarehouse_tests.dll.a
+  TARGET_PDB = warehouse_tests.exe.dbg
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\ctest.exe" "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles/test.util
 
 
 #############################################
@@ -174,6 +254,48 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 
 #############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+
+#############################################
 # Utility command for warehouse_autogen_timestamp_deps
 
 build warehouse_autogen_timestamp_deps: phony
@@ -183,6 +305,18 @@ build warehouse_autogen_timestamp_deps: phony
 # Utility command for warehouse_autogen
 
 build warehouse_autogen: phony CMakeFiles/warehouse_autogen warehouse_autogen/timestamp warehouse_autogen/mocs_compilation.cpp warehouse_autogen_timestamp_deps
+
+
+#############################################
+# Utility command for warehouse_tests_autogen_timestamp_deps
+
+build warehouse_tests_autogen_timestamp_deps: phony lib/libgtest.a lib/libgtest_main.a
+
+
+#############################################
+# Utility command for warehouse_tests_autogen
+
+build warehouse_tests_autogen: phony CMakeFiles/warehouse_tests_autogen warehouse_tests_autogen/timestamp warehouse_tests_autogen/mocs_compilation.cpp warehouse_tests_autogen_timestamp_deps
 
 
 #############################################
@@ -197,14 +331,595 @@ build warehouse_autogen/timestamp warehouse_autogen/mocs_compilation.cpp | ${cma
 
 
 #############################################
+# Custom command for warehouse_tests_autogen\timestamp
+
+build warehouse_tests_autogen/timestamp warehouse_tests_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}warehouse_tests_autogen/timestamp ${cmake_ninja_workdir}warehouse_tests_autogen/mocs_compilation.cpp: CUSTOM_COMMAND C$:/Qt/6.11.1/mingw_64/bin/moc.exe || _deps/googletest-build/googletest/gtest_autogen _deps/googletest-build/googletest/gtest_autogen_timestamp_deps _deps/googletest-build/googletest/gtest_main_autogen _deps/googletest-build/googletest/gtest_main_autogen_timestamp_deps lib/libgtest.a lib/libgtest_main.a warehouse_tests_autogen_timestamp_deps
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E cmake_autogen C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/CMakeFiles/warehouse_tests_autogen.dir/AutogenInfo.json Debug && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E touch C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/timestamp && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E cmake_transform_depfile Ninja gccdepfile C:/Users/Dimon/CLionProjects/warehouse C:/Users/Dimon/CLionProjects/warehouse C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/warehouse_tests_autogen/deps C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/CMakeFiles/d/6975e720257477ae82d7a5cd2a2ba45dc019a3b1642f5d09804aab7ecdd75890.d"
+  DESC = Automatic MOC for target warehouse_tests
+  depfile = CMakeFiles\d\6975e720257477ae82d7a5cd2a2ba45dc019a3b1642f5d09804aab7ecdd75890.d
+  deps = gcc
+  restat = 1
+
+
+#############################################
 # Phony custom command for CMakeFiles\warehouse_autogen
 
 build CMakeFiles/warehouse_autogen | ${cmake_ninja_workdir}CMakeFiles/warehouse_autogen: phony warehouse_autogen/timestamp || warehouse_autogen_timestamp_deps
 
+
+#############################################
+# Phony custom command for CMakeFiles\warehouse_tests_autogen
+
+build CMakeFiles/warehouse_tests_autogen | ${cmake_ninja_workdir}CMakeFiles/warehouse_tests_autogen: phony warehouse_tests_autogen/timestamp || _deps/googletest-build/googletest/gtest_autogen _deps/googletest-build/googletest/gtest_autogen_timestamp_deps _deps/googletest-build/googletest/gtest_main_autogen _deps/googletest-build/googletest/gtest_main_autogen_timestamp_deps lib/libgtest.a lib/libgtest_main.a warehouse_tests_autogen_timestamp_deps
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Dimon/CLionProjects/warehouse/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for test
+
+build _deps/googletest-build/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\ctest.exe" "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/test: phony _deps/googletest-build/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/googletest-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/googletest-build/edit_cache: phony _deps/googletest-build/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/googletest-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Dimon\CLionProjects\warehouse -BC:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/rebuild_cache: phony _deps/googletest-build/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/googletest-build/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/googletest-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/install: phony _deps/googletest-build/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/googletest-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/install/local: phony _deps/googletest-build/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/googletest-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/install/strip: phony _deps/googletest-build/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Order-only phony target for gmock
+
+build cmake_object_order_depends_target_gmock: phony || _deps/googletest-build/googlemock/gmock_autogen _deps/googletest-build/googlemock/gmock_autogen/mocs_compilation.cpp _deps/googletest-build/googlemock/gmock_autogen/timestamp _deps/googletest-build/googlemock/gmock_autogen_timestamp_deps cmake_object_order_depends_target_gtest
+
+build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__gmock_unscanned_Debug C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googlemock/gmock_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_gmock
+  CONFIG = Debug
+  DEP_FILE = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\gmock_autogen\mocs_compilation.cpp.obj.d
+  FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -IC:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googlemock/gmock_autogen/include -IC:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock/include -IC:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest
+  OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir
+  OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\gmock_autogen
+
+build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_unscanned_Debug C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+  CONFIG = Debug
+  DEP_FILE = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.d
+  FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -IC:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googlemock/gmock_autogen/include -IC:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock/include -IC:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest
+  OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir
+  OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock
+
+
+#############################################
+# Link the static library lib\libgmock.a
+
+build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.obj _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj || _deps/googletest-build/googlemock/gmock_autogen _deps/googletest-build/googlemock/gmock_autogen_timestamp_deps lib/libgtest.a
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\libgmock.a
+  TARGET_PDB = gmock.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Order-only phony target for gmock_main
+
+build cmake_object_order_depends_target_gmock_main: phony || _deps/googletest-build/googlemock/gmock_main_autogen _deps/googletest-build/googlemock/gmock_main_autogen/mocs_compilation.cpp _deps/googletest-build/googlemock/gmock_main_autogen/timestamp _deps/googletest-build/googlemock/gmock_main_autogen_timestamp_deps cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
+
+build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/gmock_main_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__gmock_main_unscanned_Debug C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googlemock/gmock_main_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_gmock_main
+  CONFIG = Debug
+  DEP_FILE = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\gmock_main_autogen\mocs_compilation.cpp.obj.d
+  FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -IC:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googlemock/gmock_main_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest
+  OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
+  OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\gmock_main_autogen
+
+build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_unscanned_Debug C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+  CONFIG = Debug
+  DEP_FILE = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.d
+  FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -IC:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googlemock/gmock_main_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest
+  OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
+  OBJECT_FILE_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gmock_main
+
+
+#############################################
+# Link the static library lib\libgmock_main.a
+
+build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/gmock_main_autogen/mocs_compilation.cpp.obj _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj || _deps/googletest-build/googlemock/gmock_main_autogen _deps/googletest-build/googlemock/gmock_main_autogen_timestamp_deps lib/libgmock.a lib/libgtest.a
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\libgmock_main.a
+  TARGET_PDB = gmock_main.a.dbg
+
+
+#############################################
+# Utility command for test
+
+build _deps/googletest-build/googlemock/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build\googlemock && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\ctest.exe" "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/test: phony _deps/googletest-build/googlemock/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/googletest-build/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build\googlemock && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/googletest-build/googlemock/edit_cache: phony _deps/googletest-build/googlemock/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/googletest-build/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build\googlemock && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Dimon\CLionProjects\warehouse -BC:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/rebuild_cache: phony _deps/googletest-build/googlemock/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/googletest-build/googlemock/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/googletest-build/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build\googlemock && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/install: phony _deps/googletest-build/googlemock/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/googletest-build/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build\googlemock && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/install/local: phony _deps/googletest-build/googlemock/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/googletest-build/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build\googlemock && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googlemock/install/strip: phony _deps/googletest-build/googlemock/CMakeFiles/install/strip.util
+
+
+#############################################
+# Utility command for gmock_autogen_timestamp_deps
+
+build _deps/googletest-build/googlemock/gmock_autogen_timestamp_deps: phony lib/libgtest.a
+
+
+#############################################
+# Utility command for gmock_autogen
+
+build _deps/googletest-build/googlemock/gmock_autogen: phony _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen _deps/googletest-build/googlemock/gmock_autogen/timestamp _deps/googletest-build/googlemock/gmock_autogen/mocs_compilation.cpp _deps/googletest-build/googlemock/gmock_autogen_timestamp_deps
+
+
+#############################################
+# Utility command for gmock_main_autogen_timestamp_deps
+
+build _deps/googletest-build/googlemock/gmock_main_autogen_timestamp_deps: phony lib/libgmock.a
+
+
+#############################################
+# Utility command for gmock_main_autogen
+
+build _deps/googletest-build/googlemock/gmock_main_autogen: phony _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen _deps/googletest-build/googlemock/gmock_main_autogen/timestamp _deps/googletest-build/googlemock/gmock_main_autogen/mocs_compilation.cpp _deps/googletest-build/googlemock/gmock_main_autogen_timestamp_deps
+
+
+#############################################
+# Custom command for _deps\googletest-build\googlemock\gmock_autogen\timestamp
+
+build _deps/googletest-build/googlemock/gmock_autogen/timestamp _deps/googletest-build/googlemock/gmock_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}_deps/googletest-build/googlemock/gmock_autogen/timestamp ${cmake_ninja_workdir}_deps/googletest-build/googlemock/gmock_autogen/mocs_compilation.cpp: CUSTOM_COMMAND C$:/Qt/6.11.1/mingw_64/bin/moc.exe || _deps/googletest-build/googlemock/gmock_autogen_timestamp_deps _deps/googletest-build/googletest/gtest_autogen _deps/googletest-build/googletest/gtest_autogen_timestamp_deps lib/libgtest.a
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build\googlemock && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E cmake_autogen C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googlemock/CMakeFiles/gmock_autogen.dir/AutogenInfo.json Debug && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E touch C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googlemock/gmock_autogen/timestamp && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E cmake_transform_depfile Ninja gccdepfile C:/Users/Dimon/CLionProjects/warehouse C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googlemock C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googlemock/gmock_autogen/deps C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/CMakeFiles/d/0bd5113bbf7055a5b898a8f68f6ddc4989ced3b3cceeb9c9c8778b088653f9fb.d"
+  DESC = Automatic MOC for target gmock
+  depfile = CMakeFiles\d\0bd5113bbf7055a5b898a8f68f6ddc4989ced3b3cceeb9c9c8778b088653f9fb.d
+  deps = gcc
+  restat = 1
+
+
+#############################################
+# Custom command for _deps\googletest-build\googlemock\gmock_main_autogen\timestamp
+
+build _deps/googletest-build/googlemock/gmock_main_autogen/timestamp _deps/googletest-build/googlemock/gmock_main_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}_deps/googletest-build/googlemock/gmock_main_autogen/timestamp ${cmake_ninja_workdir}_deps/googletest-build/googlemock/gmock_main_autogen/mocs_compilation.cpp: CUSTOM_COMMAND C$:/Qt/6.11.1/mingw_64/bin/moc.exe || _deps/googletest-build/googlemock/gmock_autogen _deps/googletest-build/googlemock/gmock_autogen_timestamp_deps _deps/googletest-build/googlemock/gmock_main_autogen_timestamp_deps _deps/googletest-build/googletest/gtest_autogen _deps/googletest-build/googletest/gtest_autogen_timestamp_deps lib/libgmock.a lib/libgtest.a
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build\googlemock && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E cmake_autogen C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/AutogenInfo.json Debug && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E touch C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googlemock/gmock_main_autogen/timestamp && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E cmake_transform_depfile Ninja gccdepfile C:/Users/Dimon/CLionProjects/warehouse C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googlemock C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googlemock/gmock_main_autogen/deps C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/CMakeFiles/d/c00f3fbd45a5b7e934a13dc538419a00e4158e3fa6b6d69e30108d65bbbafa28.d"
+  DESC = Automatic MOC for target gmock_main
+  depfile = CMakeFiles\d\c00f3fbd45a5b7e934a13dc538419a00e4158e3fa6b6d69e30108d65bbbafa28.d
+  deps = gcc
+  restat = 1
+
+
+#############################################
+# Phony custom command for _deps\googletest-build\googlemock\CMakeFiles\gmock_autogen
+
+build _deps/googletest-build/googlemock/CMakeFiles/gmock_autogen | ${cmake_ninja_workdir}_deps/googletest-build/googlemock/CMakeFiles/gmock_autogen: phony _deps/googletest-build/googlemock/gmock_autogen/timestamp || _deps/googletest-build/googlemock/gmock_autogen_timestamp_deps _deps/googletest-build/googletest/gtest_autogen _deps/googletest-build/googletest/gtest_autogen_timestamp_deps lib/libgtest.a
+
+
+#############################################
+# Phony custom command for _deps\googletest-build\googlemock\CMakeFiles\gmock_main_autogen
+
+build _deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen | ${cmake_ninja_workdir}_deps/googletest-build/googlemock/CMakeFiles/gmock_main_autogen: phony _deps/googletest-build/googlemock/gmock_main_autogen/timestamp || _deps/googletest-build/googlemock/gmock_autogen _deps/googletest-build/googlemock/gmock_autogen_timestamp_deps _deps/googletest-build/googlemock/gmock_main_autogen_timestamp_deps _deps/googletest-build/googletest/gtest_autogen _deps/googletest-build/googletest/gtest_autogen_timestamp_deps lib/libgmock.a lib/libgtest.a
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googlemock/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Order-only phony target for gtest
+
+build cmake_object_order_depends_target_gtest: phony || _deps/googletest-build/googletest/gtest_autogen _deps/googletest-build/googletest/gtest_autogen/mocs_compilation.cpp _deps/googletest-build/googletest/gtest_autogen/timestamp _deps/googletest-build/googletest/gtest_autogen_timestamp_deps
+
+build _deps/googletest-build/googletest/CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__gtest_unscanned_Debug C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googletest/gtest_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_gtest
+  CONFIG = Debug
+  DEP_FILE = _deps\googletest-build\googletest\CMakeFiles\gtest.dir\gtest_autogen\mocs_compilation.cpp.obj.d
+  FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -IC:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googletest/gtest_autogen/include -IC:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -IC:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest
+  OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir
+  OBJECT_FILE_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir\gtest_autogen
+
+build _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_unscanned_Debug C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+  CONFIG = Debug
+  DEP_FILE = _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.d
+  FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -IC:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googletest/gtest_autogen/include -IC:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -IC:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest
+  OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir
+  OBJECT_FILE_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Link the static library lib\libgtest.a
+
+build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug _deps/googletest-build/googletest/CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.obj _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj || _deps/googletest-build/googletest/gtest_autogen _deps/googletest-build/googletest/gtest_autogen_timestamp_deps
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\libgtest.a
+  TARGET_PDB = gtest.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Order-only phony target for gtest_main
+
+build cmake_object_order_depends_target_gtest_main: phony || _deps/googletest-build/googletest/gtest_main_autogen _deps/googletest-build/googletest/gtest_main_autogen/mocs_compilation.cpp _deps/googletest-build/googletest/gtest_main_autogen/timestamp _deps/googletest-build/googletest/gtest_main_autogen_timestamp_deps cmake_object_order_depends_target_gtest
+
+build _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/gtest_main_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__gtest_main_unscanned_Debug C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googletest/gtest_main_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_gtest_main
+  CONFIG = Debug
+  DEP_FILE = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\gtest_main_autogen\mocs_compilation.cpp.obj.d
+  FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -IC:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googletest/gtest_main_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest
+  OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir
+  OBJECT_FILE_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\gtest_main_autogen
+
+build _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_unscanned_Debug C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+  CONFIG = Debug
+  DEP_FILE = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d
+  FLAGS = -g -std=c++17 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  INCLUDES = -IC:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googletest/gtest_main_autogen/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest
+  OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir
+  OBJECT_FILE_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Link the static library lib\libgtest_main.a
+
+build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/gtest_main_autogen/mocs_compilation.cpp.obj _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj || _deps/googletest-build/googletest/gtest_main_autogen _deps/googletest-build/googletest/gtest_main_autogen_timestamp_deps lib/libgtest.a
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lib\libgtest_main.a
+  TARGET_PDB = gtest_main.a.dbg
+
+
+#############################################
+# Utility command for test
+
+build _deps/googletest-build/googletest/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build\googletest && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\ctest.exe" "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/test: phony _deps/googletest-build/googletest/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/googletest-build/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build\googletest && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/googletest-build/googletest/edit_cache: phony _deps/googletest-build/googletest/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/googletest-build/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build\googletest && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Dimon\CLionProjects\warehouse -BC:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/rebuild_cache: phony _deps/googletest-build/googletest/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build _deps/googletest-build/googletest/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build _deps/googletest-build/googletest/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build\googletest && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/install: phony _deps/googletest-build/googletest/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build _deps/googletest-build/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build\googletest && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/install/local: phony _deps/googletest-build/googletest/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build _deps/googletest-build/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build\googletest && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build _deps/googletest-build/googletest/install/strip: phony _deps/googletest-build/googletest/CMakeFiles/install/strip.util
+
+
+#############################################
+# Utility command for gtest_autogen_timestamp_deps
+
+build _deps/googletest-build/googletest/gtest_autogen_timestamp_deps: phony
+
+
+#############################################
+# Utility command for gtest_autogen
+
+build _deps/googletest-build/googletest/gtest_autogen: phony _deps/googletest-build/googletest/CMakeFiles/gtest_autogen _deps/googletest-build/googletest/gtest_autogen/timestamp _deps/googletest-build/googletest/gtest_autogen/mocs_compilation.cpp _deps/googletest-build/googletest/gtest_autogen_timestamp_deps
+
+
+#############################################
+# Utility command for gtest_main_autogen_timestamp_deps
+
+build _deps/googletest-build/googletest/gtest_main_autogen_timestamp_deps: phony lib/libgtest.a
+
+
+#############################################
+# Utility command for gtest_main_autogen
+
+build _deps/googletest-build/googletest/gtest_main_autogen: phony _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen _deps/googletest-build/googletest/gtest_main_autogen/timestamp _deps/googletest-build/googletest/gtest_main_autogen/mocs_compilation.cpp _deps/googletest-build/googletest/gtest_main_autogen_timestamp_deps
+
+
+#############################################
+# Custom command for _deps\googletest-build\googletest\gtest_autogen\timestamp
+
+build _deps/googletest-build/googletest/gtest_autogen/timestamp _deps/googletest-build/googletest/gtest_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}_deps/googletest-build/googletest/gtest_autogen/timestamp ${cmake_ninja_workdir}_deps/googletest-build/googletest/gtest_autogen/mocs_compilation.cpp: CUSTOM_COMMAND C$:/Qt/6.11.1/mingw_64/bin/moc.exe || _deps/googletest-build/googletest/gtest_autogen_timestamp_deps
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build\googletest && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E cmake_autogen C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/gtest_autogen.dir/AutogenInfo.json Debug && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E touch C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googletest/gtest_autogen/timestamp && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E cmake_transform_depfile Ninja gccdepfile C:/Users/Dimon/CLionProjects/warehouse C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googletest C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googletest/gtest_autogen/deps C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/CMakeFiles/d/a2d13699d73d351882acbbe52567c589be88e1066e491aec79700d1e29b38217.d"
+  DESC = Automatic MOC for target gtest
+  depfile = CMakeFiles\d\a2d13699d73d351882acbbe52567c589be88e1066e491aec79700d1e29b38217.d
+  deps = gcc
+  restat = 1
+
+
+#############################################
+# Custom command for _deps\googletest-build\googletest\gtest_main_autogen\timestamp
+
+build _deps/googletest-build/googletest/gtest_main_autogen/timestamp _deps/googletest-build/googletest/gtest_main_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}_deps/googletest-build/googletest/gtest_main_autogen/timestamp ${cmake_ninja_workdir}_deps/googletest-build/googletest/gtest_main_autogen/mocs_compilation.cpp: CUSTOM_COMMAND C$:/Qt/6.11.1/mingw_64/bin/moc.exe || _deps/googletest-build/googletest/gtest_autogen _deps/googletest-build/googletest/gtest_autogen_timestamp_deps _deps/googletest-build/googletest/gtest_main_autogen_timestamp_deps lib/libgtest.a
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Dimon\CLionProjects\warehouse\cmake-build-debug\_deps\googletest-build\googletest && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E cmake_autogen C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen.dir/AutogenInfo.json Debug && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E touch C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googletest/gtest_main_autogen/timestamp && "C:\Program Files\JetBrains\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -E cmake_transform_depfile Ninja gccdepfile C:/Users/Dimon/CLionProjects/warehouse C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-src/googletest C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googletest C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googletest/gtest_main_autogen/deps C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/CMakeFiles/d/6739fc4e4b33ecbbdd114798726c014c18b45833bcf6501999dd8a4d04d890fc.d"
+  DESC = Automatic MOC for target gtest_main
+  depfile = CMakeFiles\d\6739fc4e4b33ecbbdd114798726c014c18b45833bcf6501999dd8a4d04d890fc.d
+  deps = gcc
+  restat = 1
+
+
+#############################################
+# Phony custom command for _deps\googletest-build\googletest\CMakeFiles\gtest_autogen
+
+build _deps/googletest-build/googletest/CMakeFiles/gtest_autogen | ${cmake_ninja_workdir}_deps/googletest-build/googletest/CMakeFiles/gtest_autogen: phony _deps/googletest-build/googletest/gtest_autogen/timestamp || _deps/googletest-build/googletest/gtest_autogen_timestamp_deps
+
+
+#############################################
+# Phony custom command for _deps\googletest-build\googletest\CMakeFiles\gtest_main_autogen
+
+build _deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen | ${cmake_ninja_workdir}_deps/googletest-build/googletest/CMakeFiles/gtest_main_autogen: phony _deps/googletest-build/googletest/gtest_main_autogen/timestamp || _deps/googletest-build/googletest/gtest_autogen _deps/googletest-build/googletest/gtest_autogen_timestamp_deps _deps/googletest-build/googletest/gtest_main_autogen_timestamp_deps lib/libgtest.a
+
 # =============================================================================
 # Target aliases.
 
+build gmock: phony lib/libgmock.a
+
+build gmock_autogen: phony _deps/googletest-build/googlemock/gmock_autogen
+
+build gmock_autogen_timestamp_deps: phony _deps/googletest-build/googlemock/gmock_autogen_timestamp_deps
+
+build gmock_main: phony lib/libgmock_main.a
+
+build gmock_main_autogen: phony _deps/googletest-build/googlemock/gmock_main_autogen
+
+build gmock_main_autogen_timestamp_deps: phony _deps/googletest-build/googlemock/gmock_main_autogen_timestamp_deps
+
+build gtest: phony lib/libgtest.a
+
+build gtest_autogen: phony _deps/googletest-build/googletest/gtest_autogen
+
+build gtest_autogen_timestamp_deps: phony _deps/googletest-build/googletest/gtest_autogen_timestamp_deps
+
+build gtest_main: phony lib/libgtest_main.a
+
+build gtest_main_autogen: phony _deps/googletest-build/googletest/gtest_main_autogen
+
+build gtest_main_autogen_timestamp_deps: phony _deps/googletest-build/googletest/gtest_main_autogen_timestamp_deps
+
+build libgmock.a: phony lib/libgmock.a
+
+build libgmock_main.a: phony lib/libgmock_main.a
+
+build libgtest.a: phony lib/libgtest.a
+
+build libgtest_main.a: phony lib/libgtest_main.a
+
 build warehouse: phony warehouse.exe
+
+build warehouse_tests: phony warehouse_tests.exe
 
 # =============================================================================
 # Folder targets.
@@ -214,7 +929,28 @@ build warehouse: phony warehouse.exe
 #############################################
 # Folder: C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug
 
-build all: phony warehouse.exe
+build all: phony warehouse.exe warehouse_tests.exe _deps/googletest-build/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build
+
+build _deps/googletest-build/all: phony _deps/googletest-build/googlemock/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googlemock
+
+build _deps/googletest-build/googlemock/all: phony lib/libgmock.a lib/libgmock_main.a _deps/googletest-build/googletest/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googletest
+
+build _deps/googletest-build/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 
 # =============================================================================
 # Built-in targets
@@ -223,14 +959,14 @@ build all: phony warehouse.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/cmake_install.cmake: RERUN_CMAKE | C$:/OpenXLSX/lib/cmake/OpenXLSX/OpenXLSXConfig.cmake C$:/OpenXLSX/lib/cmake/OpenXLSX/OpenXLSXConfigVersion.cmake C$:/OpenXLSX/lib/cmake/OpenXLSX/OpenXLSXTargets-release.cmake C$:/OpenXLSX/lib/cmake/OpenXLSX/OpenXLSXTargets.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckCXXSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FindVulkan.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointMinGW32Target.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateVersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/FindWrapAtomic.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6Config.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6Targets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6TargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6VersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtFeature.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtFeatureCommon.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtInstallPaths.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicGitHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomBuildToolHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomCommonGenerationHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomDocumentNamespaceHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomExternalReferenceHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomRelationshipHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake C$:/Users/Dimon/CLionProjects/warehouse/CMakeLists.txt CMakeCache.txt CMakeFiles/4.0.2/CMakeCCompiler.cmake CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeRCCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake
+build build.ninja C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/cmake_install.cmake C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/cmake_install.cmake C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googlemock/cmake_install.cmake C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googletest/cmake_install.cmake C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/CTestTestfile.cmake C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/CTestTestfile.cmake C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googlemock/CTestTestfile.cmake C$:/Users/Dimon/CLionProjects/warehouse/cmake-build-debug/_deps/googletest-build/googletest/CTestTestfile.cmake: RERUN_CMAKE | C$:/OpenXLSX/lib/cmake/OpenXLSX/OpenXLSXConfig.cmake C$:/OpenXLSX/lib/cmake/OpenXLSX/OpenXLSXConfigVersion.cmake C$:/OpenXLSX/lib/cmake/OpenXLSX/OpenXLSXTargets-release.cmake C$:/OpenXLSX/lib/cmake/OpenXLSX/OpenXLSXTargets.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckCXXSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/ExternalProject/shared_internal_commands.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FetchContent.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FetchContent/CMakeLists.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FindVulkan.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/WriteBasicConfigVersionFile.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointMinGW32Target.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateVersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/FindWrapAtomic.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6Config.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6Targets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6TargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6VersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtFeature.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtFeatureCommon.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtInstallPaths.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicGitHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomBuildToolHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomCommonGenerationHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomDocumentNamespaceHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomExternalReferenceHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomRelationshipHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake C$:/Users/Dimon/CLionProjects/warehouse/CMakeLists.txt CMakeCache.txt CMakeFiles/4.0.2/CMakeCCompiler.cmake CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeRCCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/OpenXLSX/lib/cmake/OpenXLSX/OpenXLSXConfig.cmake C$:/OpenXLSX/lib/cmake/OpenXLSX/OpenXLSXConfigVersion.cmake C$:/OpenXLSX/lib/cmake/OpenXLSX/OpenXLSXTargets-release.cmake C$:/OpenXLSX/lib/cmake/OpenXLSX/OpenXLSXTargets.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckCXXSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FindVulkan.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointMinGW32Target.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateVersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/FindWrapAtomic.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6Config.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6Targets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6TargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6VersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtFeature.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtFeatureCommon.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtInstallPaths.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicGitHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomBuildToolHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomCommonGenerationHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomDocumentNamespaceHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomExternalReferenceHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomRelationshipHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake C$:/Users/Dimon/CLionProjects/warehouse/CMakeLists.txt CMakeCache.txt CMakeFiles/4.0.2/CMakeCCompiler.cmake CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeRCCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake: phony
+build C$:/OpenXLSX/lib/cmake/OpenXLSX/OpenXLSXConfig.cmake C$:/OpenXLSX/lib/cmake/OpenXLSX/OpenXLSXConfigVersion.cmake C$:/OpenXLSX/lib/cmake/OpenXLSX/OpenXLSXTargets-release.cmake C$:/OpenXLSX/lib/cmake/OpenXLSX/OpenXLSXTargets.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckCXXSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckIncludeFile.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/ExternalProject/shared_internal_commands.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FetchContent.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FetchContent/CMakeLists.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FindThreads.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/FindVulkan.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2.1/bin/cmake/win/x64/share/cmake-4.0/Modules/WriteBasicConfigVersionFile.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointMinGW32Target.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateVersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/FindWrapAtomic.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6Config.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6Targets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6TargetsPrecheck.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6VersionlessAliasTargets.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtFeature.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtFeatureCommon.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtInstallPaths.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicGitHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomBuildToolHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomCommonGenerationHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomDocumentNamespaceHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomExternalReferenceHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomRelationshipHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake C$:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake C$:/Users/Dimon/CLionProjects/warehouse/CMakeLists.txt CMakeCache.txt CMakeFiles/4.0.2/CMakeCCompiler.cmake CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeRCCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake: phony
 
 
 #############################################
